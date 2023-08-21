@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/workout-tracker/static/css/main.d69262b1.css",
+    "main.js": "/workout-tracker/static/js/main.f45615fc.js",
+    "static/media/logo.svg": "/workout-tracker/static/media/logo.44b78decc461d3079d3bd1c2f5a14f82.svg",
+    "index.html": "/workout-tracker/index.html",
+    "main.d69262b1.css.map": "/workout-tracker/static/css/main.d69262b1.css.map",
+    "main.f45615fc.js.map": "/workout-tracker/static/js/main.f45615fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d69262b1.css",
+    "static/js/main.f45615fc.js"
+  ]
+}
