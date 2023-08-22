@@ -8,7 +8,9 @@ const Home = () => {
     //creating a function to fetch the workouts from the api
     const fetchWorkouts = async () => {
         try {
-        const res = await fetch('https://workout-tracker-a3cw.onrender.com/api/workouts')
+        const res = await fetch('http://workout-tracker-a3cw.onrender.com/api/workouts', 
+        {method: 'GET',
+        headers: { "Content-Type": "application/json" }})
         const data = await res.json() //passing the response to json
         console.log(data)
         setApiWorkouts(data.workouts)
