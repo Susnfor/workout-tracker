@@ -1,7 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { WorkoutContext } from '../context/Context'
 
 const WorkoutAdd = () => {
+    //import fetchWorkouts function from the context
+    const {fetchWorkouts} = useContext(WorkoutContext);
 
     //creating state variables for the form inputs
     const [title, setTitle] = useState(''); 
@@ -14,7 +16,7 @@ const WorkoutAdd = () => {
 
         //creating a try/catch block to handle errors
         try {
-        const workout = { title, reps, load }; //creating a workout object
+        const workout = { title, reps, load }; //creating a workout object from the form inputs
 
         //fetch request to POST(add) the workout added to the api when submit is clicked
         await fetch('https://workout-tracker-a3cw.onrender.com/api/workouts', { //passing the workout object to the api
@@ -28,6 +30,7 @@ const WorkoutAdd = () => {
         setTitle('');
         setReps('');
         setLoad('');
+        fetchWorkouts(); //fetching the workouts from the api again to update the list of workouts
     } 
     catch (error) {
         //logging an error message if the workout is not added

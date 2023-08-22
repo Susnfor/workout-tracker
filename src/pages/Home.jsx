@@ -1,33 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import WorkoutAdd from '../components/WorkoutAdd'
 import WorkoutDetails from '../components/WorkoutDetails'
+import { WorkoutContext } from '../context/Context'
 
 const Home = () => {
-    const [apiWorkouts, setApiWorkouts] = useState(null) //creating a state variable to store the workouts from the api
+    // const [apiWorkouts, setApiWorkouts] = useState(null) //creating a state variable to store the workouts from the api
 
-    //creating a function to fetch the workouts from the api
-    const fetchWorkouts = async () => {
-        try {
-        const res = await fetch('https://workout-tracker-a3cw.onrender.com/api/workouts', {
-        method: 'GET',
-        headers: { "Content-Type": "application/json" }})
-        const data = await res.json() //passing the response to json
-        console.log(data)
-        setApiWorkouts(data.workouts)
-        console.log("Workouts fetched successfully")
-        } 
-        catch (error) {
-            console.log(`No Workouts, API error, message " ${error} " `)
-            
-        }
-    }
+    const {apiWorkouts, fetchWorkouts} = useContext(WorkoutContext) //creating a state variable to store the workouts from the api
     
     //creating a useEffect hook to run the fetchWorkouts function when the page loads
     useEffect(() => {
         fetchWorkouts();
 
-    }, [apiWorkouts]) //empty array means it will only run once, but it will run everytime apiworkouts change
-
+    }, []) //empty array means it will only run once when the page loads
 
 
   return (

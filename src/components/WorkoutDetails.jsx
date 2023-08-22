@@ -1,14 +1,18 @@
-import React from "react";
+import { useContext } from "react";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
+import { WorkoutContext } from '../context/Context'
 
 const WorkoutDetails = ({ workout }) => {
+  const {fetchWorkouts} = useContext(WorkoutContext);
+  
 
   // Delete workout function, when the delete icon is clicked
   const handleClick = async () => {
     try {
-      await fetch(`/api/workouts/${workout._id}`, {
+      await fetch(`https://workout-tracker-a3cw.onrender.com/api/workouts/${workout._id}`, {
         method: "DELETE",
       });
+      fetchWorkouts(); //fetching the workouts from the api again to update the list of workouts
     } catch (error) {
       console.log(`Workout not deleted, API error, message " ${error} " `);
     }
