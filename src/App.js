@@ -9,8 +9,8 @@ function App() {
         <BrowserRouter>
           <Navbar />
       <div className='pages'>
-        <Routes>
-          <Route path='/' element={<Home />} />
+        <Routes >
+          <Route exact path='/' element={<Home />} />
         </Routes>
 
       </div>
