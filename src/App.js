@@ -5,17 +5,20 @@ import './App.scss';
 
 function App() {
   return (
+    <HashRouter basename="/">
+    
     <div className="App">
-        <HashRouter basename="/">
           <Navbar />
+      
       <div className='pages'>
         <Routes >
           <Route exact path='/' element={<Home />} />
         </Routes>
-
       </div>
-        </HashRouter>
+
     </div>
+
+    </HashRouter>
   );
 }
 

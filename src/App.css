@@ -1,0 +1,119 @@
+header {
+  background-color: #4477CE;
+  color: #8CABFF;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+nav {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  padding-right: 5px;
+}
+
+.workouts-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.workouts {
+  width: 800px;
+}
+
+.pages {
+  padding: 20px;
+}
+
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #8CABFF;
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #512B81;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+form {
+  margin: 10px;
+}
+
+label, input {
+  display: flex;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: #4477CE;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .workouts-container {
+    flex-direction: column;
+  }
+  .workouts {
+    width: 400px;
+  }
+  input {
+    width: 400px;
+  }
+}/*# sourceMappingURL=App.css.map */

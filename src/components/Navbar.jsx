@@ -6,12 +6,17 @@ const Navbar = () => {
   return (
     <div>
         <header>
-            <nav>
+            <div className='nav'>
         <Link to="/">
+          <nav>
+            <div className='nav-logo'>
         <img src={logo} className="App-logo" alt="logo" height={30} />
         <h2>Workout Tracker</h2>
+        </div>
+        <p>Track your workouts!</p>
+        </nav>
         </Link>
-            </nav>
+            </div>
         </header>
     </div>
   )

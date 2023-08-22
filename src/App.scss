@@ -1,3 +1,119 @@
-// nav{
-//     display: flex;
-// }
+//variables
+@import 'variables';
+
+//nav header bar
+header {
+    background-color: $color3;
+    color:$color4 ;
+  }
+
+  header a {
+    color: $color5;
+    text-decoration: none;
+  }
+
+header{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $base-radius;
+  }
+  nav{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-logo{
+    display: flex;
+    align-items: center;
+    img{
+        padding-right: 5px;
+    }
+  }
+
+// main body page
+.workouts-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.workouts{
+    width: 800px;;
+
+}
+  .pages{
+    padding: 20px;
+  }
+  
+  .workout-details {
+    background: #fff;
+    border-radius: $base-radius;
+    margin: 20px auto;
+    padding: $base-padding;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  }
+  .workout-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: $color4;
+  }
+  .workout-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: $color2;
+  }
+  .workout-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+  }
+  
+  /* new workout form */
+  form{
+   margin:10px;
+  }
+  label, input {
+    display: flex;
+  }
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: $base-radius;
+    box-sizing: border-box;
+  }
+  form button {
+    background: $color3;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: $base-radius;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px) {
+    .workouts-container{
+        flex-direction: column;
+    }
+    .workouts{
+        width: 400px;;
+    
+    }
+    input{
+        width: 400px;
+    }
+    
+  }
