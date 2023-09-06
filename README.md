@@ -17,7 +17,7 @@ Workout tracker is a fullstack app that allows you to track what workouts you've
 
 ## Screenshots
 
-https://prnt.sc/122NPb8rZknc
+<img width="1418" alt="Screenshot 2023-08-27 at 19 48 08" src="https://github.com/Susnfor/workout-tracker/assets/97429786/ddedad17-5dab-4362-a310-8722dc36cc64">
 
 ## Technologies
 I used `react`, `sass`, `node.js`, `mongoDB` and `express`
