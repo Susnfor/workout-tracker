@@ -13,7 +13,8 @@ Access the demo here [susnfor.me](https://susnfor.me/workout-tracker/)
 - [Status](#status)
 
 ## About The App
-Workout tracker is a fullstack app that allows you to track what workouts you've done. Or help you plan what workouts you want to do. Just put in your workout, how many reps you've done, or want to do and save it.
+
+Workout Tracker is a versatile full-stack application designed to streamline your fitness journey. Whether you want to log your completed workouts or plan future exercise routines, Workout Tracker simplifies the process. Simply input your workout details, including the exercises performed and the desired repetitions, and effortlessly save your data.
 
 ## Screenshots
 
