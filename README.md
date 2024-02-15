@@ -2,7 +2,7 @@
 
 
 ## Demo link:
-Access the demo here [susnfor.me](https://susnfor.me/workout-tracker/)
+Access the demo [here](https://susnfor.com/workout-tracker/)
 
 ## Table of Content:
 
